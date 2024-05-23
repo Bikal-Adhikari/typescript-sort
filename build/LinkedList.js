@@ -37,7 +37,7 @@ class LinkedList {
     }
     at(index) {
         if (!this.head) {
-            throw new Error('Index out of bounds');
+            throw new Error("Index out of bounds");
         }
         let counter = 0;
         let node = this.head;
@@ -48,11 +48,11 @@ class LinkedList {
             counter++;
             node = node.next;
         }
-        throw new Error('Index out of bounds');
+        throw new Error("Index out of bounds");
     }
     compare(leftIndex, rightIndex) {
         if (!this.head) {
-            throw new Error('List is empty');
+            throw new Error("List is empty");
         }
         return this.at(leftIndex).data > this.at(rightIndex).data;
     }
